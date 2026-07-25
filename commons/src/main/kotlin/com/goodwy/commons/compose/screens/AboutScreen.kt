@@ -231,14 +231,6 @@ internal fun AboutNewSection(
                 ),
                 onClick = onMoreAppsClick,
             )
-            if (setupFAQ) {
-                Spacer(modifier = Modifier.size(18.dp))
-                AboutItem(
-                    text = stringResource(R.string.frequently_asked_questions),
-                    imageVector = Icons.Rounded.QuestionMark,
-                    onClick = onFAQClick,
-                )
-            }
             Spacer(modifier = Modifier.size(18.dp))
             AboutItem(
                 cardColor = MaterialTheme.colorScheme.primaryContainer,
@@ -257,12 +249,6 @@ internal fun AboutNewSection(
                 text = stringResource(R.string.third_party_licences),
                 imageVector = Icons.AutoMirrored.Outlined.Article,
                 onClick = onLicenseClick,
-            )
-            Spacer(modifier = Modifier.size(18.dp))
-            AboutItem(
-                text = stringResource(R.string.privacy_policy),
-                imageVector = Icons.Rounded.Policy,
-                onClick = onPrivacyPolicyClick,
             )
             Spacer(modifier = Modifier.size(18.dp))
             if (showGithub) {
